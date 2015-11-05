@@ -1,0 +1,124 @@
+﻿<!DOCTYPE html>
+<!--
+    File created on 21/10/2015 04:30 PM in Microsoft Visual Studio Community 2015
+    Author: Jacob Jernestaal
+    Description: Personal website
+    Folder: root
+    Name: index.html
+-->
+<!--****************************************************************************************************-->
+<html>
+<head>
+    <!--__________________________________________HEAD__________________________________________________-->
+    <!--metadata; title, links, scripts etc. -->
+    <title>Here be Dragons</title>
+    <meta charset="utf-8" />
+    <!--jQuery & Javascripts -->
+    <script type="text/javascript" src="javascript/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="../javascript/leetAnimations.js"></script>
+    <!--PHP-->
+    <!--CSS3 stylesheets-->
+    <link rel="stylesheet" type="text/css" href="css/Base.css"/>
+    <link rel="stylesheet" type="text/css" media="print" href="css/Print.css"/>
+    <link rel="stylesheet" type="text/css" media="handheld" href="css/Handheld.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/Screen.css" />
+    <!--___________________________________________/HEAD________________________________________________-->
+</head>
+<body>
+    <div id="container">
+        <div id="content">
+            <!--___________________________________________BODY___________________________________________header-->
+            <header>
+                <nav id="topLinks">
+                    <!--navigational links-->
+                    <a href="#home">Home</a> <a href="#about">About</a>
+                    <a href="#portfolio">Portfolio</a> <a href="#contact">Contact</a>
+                </nav>
+            </header>
+            <!--____________________________________________________________________________________________main-->
+            <main>
+                <!--____________________________________________________________________________________________Home; panel 1-->
+                <div id="home" class="panel">
+                    <h1><br /></h1>
+                    <div id="homeSegment1" class="segment" deluminate_imagetype="png">
+                        <p id="homePara1">
+                            "It has been said that astronomy is a humbling and character-building experience. There is perhaps no better demonstration of the folly of human conceits than this distant image of our tiny world.
+                            To me, it underscores our responsibility to deal more kindly with one another, and to preserve and cherish the pale blue dot, the only home we've ever known."
+                        </p>
+                        <p id="homePara2">
+                            ― Carl Sagan, <i>Pale Blue Dot: A Vision of the Human Future in Space</i>
+                        </p>
+                    </div>
+                </div>
+                <!--___________________________________________________________________________________________________/Home -->
+                <!--____________________________________________________________________________________________About; panel 2-->
+                <div id="about" class="panel">
+                    <h1><br /></h1>
+                    <div id="aboutSegment1" class="segment">
+                        <p>
+                            Currently majoring in Computer Engineering with a focus in Software Development, and a subsidiary subject in Informatics with a focus in Systems Development.
+                            Previous academic studies include English Language and Literature, Anthropology, Computer Science, and Human Computer Interaction.
+                            <br /><br />
+                            Previous professional experience include working as a Weighbridge Administrator and Man of all Work, while freelancing as a Software Consultant, Graphic Designer, and Academic and Creative Writing Consultant.
+                        </p>
+                    </div>
+                </div>
+                <!--___________________________________________________________________________________________________/About -->
+                <!--____________________________________________________________________________________________Portfolio; panel 3-->
+                <div id="portfolio" class="panel">
+                    <h1><br /></h1>
+                    <div id="portfolioSegment1" class="segment">
+                        <a href="https://github.com/jaje1300" title="GitHub profile"><img id="portfolioCat" src="img/githubCat.png" alt="Gthb"></a>
+                    </div>
+                    <div id="portfolioSegment2" class="segment">
+                        <p id="portfolioSeg2Para1">
+                            GitHub code for display
+                        </p>
+                        <p id="portfolioSeg2Para2">
+                            C++. <a href="https://github.com/jaje1300/Jukebox" title="Menu driven C++ console application that simulates a jukebox by queuing and unqueing song objects"> Console Jukebox</a>  <br /><br />
+                            C#. <a href="https://github.com/jaje1300/Gymverksamhet" title="GUI C# client application to administrate a gym"> Gym Admin Client</a> <br /><br />
+                            *.  <a href="https://github.com/jaje1300/jaje1300.github.io" title="HTML5, CSS3 and Javascript; Personal homepage using horizontal navigation on a single page"> This very Web Page</a>  <br /><br />
+                        </p>
+                    </div>
+                </div>
+                <!--_________________________________________________________________________________________________/Portfolio -->
+                <!--____________________________________________________________________________________________Contact; panel 4-->
+                <div id="contact" class="panel">
+                    <h1><br /></h1>
+                    <div id="contactSegment1" class="segment">
+                        <p id="contactImages">
+                            <a href="https://plus.google.com/u/1/107524750977090311609/posts" title="G+"><img id="contactGoogleP" src="img/googlepluz.png" alt="G+"></a>
+                            <a href="https://se.linkedin.com/in/jacobjernestaal" title="Lnkd-IN"><img id="contactLinkedIN" src="img/linkdin2.png" alt="LinkdN"></a>
+                        </p>
+                        <p id="contactLinks">
+                            <br />
+                            E-mail: <a href="mailto:jaje1300@student.miun.se?subject=Webpage Visitor&body=Hi Jacob!" title="I'm literally one click away"> jaje1300@student.miun.se</a> <br />
+                            Skype: <a href="skype:jacobjernestaal?add" title="Chat"> jacobjernestaal</a> <br />
+                            <br />
+                        </p>
+
+                        <form id="contactMailForm">
+                            <!--this contact form has been nerfed due to requirements not accepting php, the leftovers simulate a mailto form>-->
+                            <input id="contactNameBox" type="text" name="nameBox" placeholder="Name"> <input id="contactMailBox" type="text" name="mailBox" placeholder="Email">
+                            <input id="contactSubmitButton" type="reset" value="Send" onclick="alert('Thanks!')">
+                            <br />
+                        </form>
+                        <textarea id="contactTextArea" name="comment" form="contactMailForm" rows="3" cols="42" placeholder="Use this form to deliver a message straight to my inbox. Just drop a line and hit Send!"></textarea>
+                    </div>
+                </div>
+                <!--__________________________________________________________________________________________________/Contact -->
+            </main>
+        </div>
+    </div>
+
+    <!--__________________________________________________________________________________________footer-->
+    <div id="footer">
+        <p>
+            <!--paragraph, footer info.. stuff, goes here-->
+            Copyright &copy; 2015 Jacob Jernestaal
+        </p>
+    </div>
+    <!--___________________________________________/BODY________________________________________________-->
+</body>
+</html>
+<!--****************************************************************************************************-->

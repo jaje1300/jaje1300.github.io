@@ -1,0 +1,21 @@
+﻿/*
+    File created on 21/10/2015 04:30 PM in Microsoft Visual Studio Community 2015
+    Author: Jacob J
+    Description: specific css rules that apply to media type screen
+    Name: Screen.css
+*/
+@import "Base.css";
+@media screen and (min-device-width: 1025px)                                       /*force monitors that support resolutions above 1024 to conform to 1024*/
+{
+    body {
+        width: 7680px;
+        max-width: 7680px;
+    }
+    #footer {
+        width: 7680px;
+
+    }
+}
+
+
+

@@ -1,0 +1,12 @@
+﻿/*
+    File created on 21/10/2015 04:30 PM in Microsoft Visual Studio Community 2015
+    Author: Jacob J
+    Description: specific css rules that apply to media type handheld
+    Name: Handheld.css
+*/
+@import "Base.css";
+@media handheld and (max-device-width: 480px)
+{
+   /*page is gonna look ridiculously large but people need to get off their phones and use proper computers anyway. the revolution starts here.*/
+}
+

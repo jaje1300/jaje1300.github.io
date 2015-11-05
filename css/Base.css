@@ -1,0 +1,216 @@
+﻿/*
+    File created on 21/10/2015 04:30 PM in Microsoft Visual Studio Community 2015
+    Author: Jacob J
+    Description: css default rules
+    Name: Base.css
+*/
+/*
+    ________________________________________________________________________________________________________________________________________________________
+    Header section
+    ________________________________________________________________________________________________________________________________________________________
+*/
+header {
+    background-image: url(../img/BannerFullWidthTransBlack.png);
+    background-repeat: repeat-x;
+    height: 20px;
+    max-height: 20px;
+    border-bottom: 2px solid #b2b1b1;
+    padding: 0.5em;
+    
+    letter-spacing: 1px;
+    padding-left:45px;
+}
+header #topLinks { 
+    position: fixed;
+}
+header#topLinks {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 32px;
+    margin: 0 30px;
+    padding: 0;
+}
+
+#topLinks a{
+    display: inline-block;
+    height: 25px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+#topLinks a:link, a:visited{
+    color: #bebebe;    
+    text-decoration: none !important;
+}
+#topLinks a:hover, a:focus{
+    color: white;
+    border-bottom: 3px solid #bebebe;                                                            /*leave active border to mark current nav link */
+}
+#topLinks a:active{
+    border-bottom: 3px solid white;                                                             /*flash white border on link click*/
+}
+
+/*
+    ________________________________________________________________________________________________________________________________________________________
+    Body section
+    ________________________________________________________________________________________________________________________________________________________
+*/
+body {
+    background-image: url(../img/BGfullWidth1080pNoOverflow2.png);
+    width: 7680px;
+    max-width: 7680px;
+    margin: 0 auto;
+
+    font-size:medium;
+}
+.panel{
+    width: 870px;
+    float: left;
+    padding-left: 90px;                                                                            /*870 + 90 = 960px for actual content*/
+    padding-right: 960px;                                                                         /*hide next panel. 960 + 960 = 1920p*/ 
+    margin-top: 32px;
+    /*transition: all 1s ease;*/                                                                  /**firefox incompatible, using jquery instead*/
+}
+
+
+
+.segment{
+     background-image: url(../img/segmentBG.png);
+     width: 600px;
+     height: 200px;
+
+     margin:0 5%;
+     padding: 20px;
+
+     color:#e1dfdf;
+     font-family: Verdana, serif, 'Times New Roman';
+}
+
+#homeSegment1, #aboutSegment1{
+    text-align:justify;
+    font-size: 16px;
+    font-family: sans-serif;
+}
+#homePara2{
+    font-size: 14px;
+    /*font-style: italic;*/
+    color: #b2b1b1;
+    float: right;
+}
+
+
+#portfolioSegment1{
+    background-image:url(../img/segmentBG.png);
+    width: 300px;
+    height: 200px;
+
+    padding-left: 20px;
+    float: left;
+}
+#portfolioCat{
+    padding-left: 65px;
+}
+
+#portfolioSegment2{
+    background-image:url(../img/segmentBG.png);
+    width: 300px;
+    height: 200px;
+    
+    padding-left: 20px;
+    float: right;
+}
+#portfolioSeg2Para1{
+    text-align: center;
+    font-size: 16px;
+    line-height: 14px;
+    font-family: Calibri;
+}
+#portfolioSeg2Para2{
+    text-align: left;
+}
+#portfolioSegment2 a:link, a:visited{
+    color: #bebebe;    
+    text-decoration: none !important;
+}
+#portfolioSegment2 a:hover, a:focus{
+    color: white;
+}
+#portfolioSegment2 a:active{
+    color: #bebebe; 
+}
+
+
+
+#contactSegment1{
+    height: 220px;
+}
+#contactImages{
+    float: left;
+}
+#contactLinks{
+    float: right;
+    padding-right: 100px;
+}
+#contactSegment1 a:link, a:visited{
+    color: #bebebe;    
+    text-decoration: none !important;
+}
+#contactSegment1 a:hover, a:focus{
+    color: white;
+}
+#contactSegment1 a:active{                                                                      /*user feedback on click*/
+    color: #bebebe;
+}
+#contactMailForm{
+    float:left;
+    color: #bebebe;
+    font-size: 12px;
+    line-height: 16px;
+}
+#contactNameBox, #contactMailBox{
+    width: 140px;
+}
+#contactTextArea{
+    font-family: Verdana;
+    font-size: 12px;
+    line-height: 16px;
+    width: 347px;
+}
+#contactSubmitButton{
+    width: 53px;
+}
+
+
+html, body, #container{
+    height: 100%;
+    overflow: hidden;                                                                           /**hide scrollbar*/
+}
+
+/*
+    ________________________________________________________________________________________________________________________________________________________
+    Footer section
+    ________________________________________________________________________________________________________________________________________________________
+*/
+#footer{
+    border-top: 1px groove #808080;
+    background-image:url(../img/BannerFullWidthTransBlack.png);
+    font-size: small;
+    color: #bebebe;
+    clear: both;
+    width: 7680px;
+    position: fixed;
+    z-index: 10;
+    height: 3em;
+    margin-top: -3em;
+
+    padding-left: 50px;
+}
+#content{
+    padding-bottom: 3em;
+}
+
+
+/*
+    ________________________________________________________________________________________________________________________________________________________
+    end ****************************************************************************************************************************************************
+    ________________________________________________________________________________________________________________________________________________________
+*/

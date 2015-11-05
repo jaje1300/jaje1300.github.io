@@ -1,0 +1,15 @@
+﻿/*
+    File created on 21/10/2015 04:30 PM in Microsoft Visual Studio Community 2015
+    Author: Jacob J
+    Description: specific css rules that apply to media type print
+    Name: Print.css
+*/
+@import "Base.css";
+@media print
+{
+  @page{
+      size:landscape;                                                       /*flip it*/
+  }
+}
+
+
